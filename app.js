@@ -16,8 +16,8 @@ function getTianqi() {
           temperature: res.data.result.realtime.temperature,
           info: res.data.result.realtime.info
         })
-          .catch((err) => reject(err))
       })
+      .catch((err) => reject(err))
   })
 }
 function getLove() {
