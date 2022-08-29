@@ -10,7 +10,6 @@ function getTianqi() {
         'https://apis.juhe.cn/simpleWeather/query?city=%E5%BE%B7%E9%98%B3&key=69eb436a80a9a1fc15cbe4ac3c84f0c4'
       )
       .then((res) => {
-        console.log(res)
         resolve({
           city: res.data.result.city,
           temperature: res.data.result.realtime.temperature,
@@ -27,7 +26,6 @@ function getLove() {
         "https://api.tianapi.com/saylove/index?key=1aa102707dc4608672ae60d074e67877"
       )
       .then((res) => {
-        console.log(res.data.newslist[0].content)
         resolve(res.data.newslist[0].content);
       })
       .catch((err) => reject(err))
@@ -40,7 +38,6 @@ function getNote() {
         "https://api.tianapi.com/everyday/index?key=1aa102707dc4608672ae60d074e67877"
       )
       .then((res) => {
-        console.log(res.data.newslist[0].note)
         resolve(res.data.newslist[0].note);
       })
       .catch((err) => reject(err))
