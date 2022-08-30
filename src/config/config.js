@@ -3,7 +3,7 @@ const params = {
   appid: 'wx3126faf342dfbcf1',
   secret: '56e00957b75a0a3fe1e992b32b2b5b5e',
   touser: 'o2Qlr5lPJZANMnrUYzXt4auEEPIo',
-  template_id: 'KQTatbj3uI8EZ3sQnIOIIN1q__L0Due51uWw5wW3UV4',
+  template_id: 'XB56_LU0ZgDIcuLvoxdcWd4Me1ekUjNYifb5RivuELg',
 }
 
 function verifyEmpty() {

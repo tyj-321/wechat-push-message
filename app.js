@@ -43,6 +43,24 @@ function getNote() {
       .catch((err) => reject(err))
   })
 }
+function getHoliday() {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(
+        "https://api.tianapi.com/jiejiari/index?key=1aa102707dc4608672ae60d074e67877"
+      )
+      .then((res) => {
+        resolve({
+          info: res.data.newslist[0].info,
+          name: res.data.newslist[0].name,
+          cnweekday: res.data.newslist[0].cnweekday,
+          lunarmonth: res.data.newslist[0].lunarmonth,
+          lunarday: res.data.newslist[0].lunarday
+        });
+      })
+      .catch((err) => reject(err))
+  })
+}
 
 
 
@@ -59,11 +77,16 @@ async function start() {
   let tianqiInfo = await getTianqi()
   let text = await getLove()
   let note = await getNote()
+  let holiday = await getHoliday()
   const listConfig = {
     data: {
       nowDate: {
-        value: `今天是 ${moment(new Date()).format('YYYY/MM/DD')}`,
+        value: `今天是 ${moment(new Date()).format('YYYY/MM/DD')} ${holiday.cnweekday}`,
         color: '#57E6E2',
+      },
+      lunarDate: {
+        value: `农历${holiday.lunarmonth + holiday.lunarday} ${holiday.name ? holiday.name : holiday.info}`,
+        color: '#993366',
       },
       city: {
         value: `${tianqiInfo.city}`,
