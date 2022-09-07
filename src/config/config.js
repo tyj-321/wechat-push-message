@@ -2,8 +2,11 @@
 const params = {
   appid: 'wx3126faf342dfbcf1',
   secret: '56e00957b75a0a3fe1e992b32b2b5b5e',
-  touser: 'o2Qlr5lPJZANMnrUYzXt4auEEPIo',
-  template_id: 'XB56_LU0ZgDIcuLvoxdcWd4Me1ekUjNYifb5RivuELg',
+  // 代梦蝶
+  // touser: 'o2Qlr5lPJZANMnrUYzXt4auEEPIo',
+  // 唐永杰
+  touser: 'o2Qlr5rfJXVKvyOEgPxQTFI_eoIY',
+  template_id: '0KKw-KmBW5LaG_mCZKPOCZoe2s4xssFeQF3lJPgeFtw',
 }
 
 function verifyEmpty() {

@@ -88,6 +88,10 @@ async function start() {
         value: `农历${holiday.lunarmonth + holiday.lunarday} ${holiday.name ? holiday.name : holiday.info}`,
         color: '#993366',
       },
+      saysDate: {
+        value: 'baby多一点，让我心甘情愿爱你',
+        color: '#FF6347',
+      },
       city: {
         value: `${tianqiInfo.city}`,
         color: '#9CA2A0',
@@ -101,7 +105,7 @@ async function start() {
         color: '#0000EE',
       },
       loveDate: {
-        value: `${moment(new Date()).diff(moment('2022/2/3'), 'days')}`,
+        value: `${moment(new Date()).diff(moment('2022/8/21'), 'days')}`,
         color: '#FF34B3',
       },
       txt: {
