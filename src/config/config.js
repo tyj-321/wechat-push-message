@@ -3,10 +3,10 @@ const params = {
   appid: 'wx3126faf342dfbcf1',
   secret: '56e00957b75a0a3fe1e992b32b2b5b5e',
   // 代梦蝶
-  // touser: 'o2Qlr5lPJZANMnrUYzXt4auEEPIo',
+  touser: 'o2Qlr5lPJZANMnrUYzXt4auEEPIo',
   // 唐永杰
-  touser: 'o2Qlr5rfJXVKvyOEgPxQTFI_eoIY',
-  template_id: '0KKw-KmBW5LaG_mCZKPOCZoe2s4xssFeQF3lJPgeFtw',
+  // touser: 'o2Qlr5rfJXVKvyOEgPxQTFI_eoIY',
+  template_id: '5aWOk1akuEQ51UIJa_v4HM3l2qKKQ0bJsXeZ9aV_Iks',
 }
 
 function verifyEmpty() {

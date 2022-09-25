@@ -89,7 +89,7 @@ async function start() {
         color: '#993366',
       },
       saysDate: {
-        value: 'baby多一点，让我心甘情愿爱你',
+        value: '我肯定在几百年前就说过爱你',
         color: '#FF6347',
       },
       city: {
@@ -105,7 +105,7 @@ async function start() {
         color: '#0000EE',
       },
       loveDate: {
-        value: `${moment(new Date()).diff(moment('2022/8/21'), 'days')}`,
+        value: `${moment(new Date()).diff(moment('2022/2/3'), 'days')}`,
         color: '#FF34B3',
       },
       txt: {
